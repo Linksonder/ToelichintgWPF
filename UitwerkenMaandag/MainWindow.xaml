@@ -1,0 +1,38 @@
+﻿<Window x:Class="UitwerkenMaandag.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.ignore.com"
+        xmlns:mijnViewModels="clr-namespace:UitwerkenMaandag.ViewModel"
+        mc:Ignorable="d ignore"
+        Height="300"
+        Width="300"
+        Title="MVVM Light Application">
+    
+    <!-- DataContext = new ProductVM();-->
+    <Window.DataContext>
+        <mijnViewModels:ProductVM />  
+    </Window.DataContext>
+    
+    <!-- Window.Resources.add("ConverterNaampje",new EuroToDollarConverter) -->
+    <Window.Resources>
+        <ResourceDictionary>
+            <mijnViewModels:EuroToDollarConverter x:Key="dollahConverter" />
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <!--var layoutRoot = new StackPanel(); Window.children.add(layoutRoot)--> 
+    <StackPanel x:Name="LayoutRoot">
+
+        <!-- var MijnTextbox = new TextBlock(); Layoutroot.children.add(mijnTextBox);-->
+        <TextBox Text="{Binding Name}"/>
+        <TextBox Text="{Binding Price, Converter={StaticResource dollahConverter}}"/>
+        
+        <Button Command="{Binding PrintProductCommand}" >Print</Button>
+
+    </StackPanel>
+</Window>
