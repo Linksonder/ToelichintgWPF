@@ -12,7 +12,6 @@ C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\bin\Debug\GalaSoft
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\bin\Debug\GalaSoft.MvvmLight.Extras.xml
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\bin\Debug\System.Windows.Interactivity.xml
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\obj\Debug\MainWindow.baml
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\obj\Debug\Skins\MainSkin.baml
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\obj\Debug\MainWindow.g.cs
@@ -26,4 +25,8 @@ C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\obj\Debug\Uitwerke
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\obj\Debug\UitwerkenMaandag.csproj.GenerateResource.Cache
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\obj\Debug\UitwerkenMaandag.exe
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\obj\Debug\UitwerkenMaandag.pdb
+C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\bin\Debug\UitwerkenMaandag.exe.config
 C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\obj\Debug\UitwerkenMaandag.csprojResolveAssemblyReference.cache
+C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Linksonder\Desktop\UitwerkenMaandag\UitwerkenMaandag\bin\Debug\GalaSoft.MvvmLight.Platform.xml

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace UitwerkenMaandag
 {
-    class Product
+    public class Product
     {
         public string Name { get; set; }
 

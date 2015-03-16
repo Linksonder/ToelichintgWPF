@@ -26,10 +26,9 @@ namespace UitwerkenMaandag.ViewModel
 
         public ICommand PrintProductCommand { get; set; }
 
-        public ProductVM()
+        public ProductVM(Product product)
         {
-           
-
+            _product = product;
             PrintProductCommand = new RelayCommand(PrintProduct);
         }
 

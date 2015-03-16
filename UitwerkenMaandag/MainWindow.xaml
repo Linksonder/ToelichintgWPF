@@ -12,7 +12,7 @@
     
     <!-- DataContext = new ProductVM();-->
     <Window.DataContext>
-        <mijnViewModels:ProductVM />  
+        <mijnViewModels:AfdelingVM />  
     </Window.DataContext>
     
     <!-- Window.Resources.add("ConverterNaampje",new EuroToDollarConverter) -->
@@ -24,15 +24,30 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-
+    
+   
+    
     <!--var layoutRoot = new StackPanel(); Window.children.add(layoutRoot)--> 
     <StackPanel x:Name="LayoutRoot">
-
-        <!-- var MijnTextbox = new TextBlock(); Layoutroot.children.add(mijnTextBox);-->
-        <TextBox Text="{Binding Name}"/>
-        <TextBox Text="{Binding Price, Converter={StaticResource dollahConverter}}"/>
         
-        <Button Command="{Binding PrintProductCommand}" >Print</Button>
+        <TextBlock Text="{Binding AfdelingName}" />
+        
+        <!-- var dataGrid = new DataGrid(); 
+             dataGrid.Selected
+                Layoutroot.children.add(dataGrid); 
+        
+        -->
+        <DataGrid  ItemsSource="{Binding ProductList}" AutoGenerateColumns="False" SelectedItem="{Binding SelectedProduct}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Price in Dollars" Binding="{Binding Price, Converter={StaticResource dollahConverter}}"/>
+            </DataGrid.Columns>     
+        </DataGrid>
+        
+        <TextBlock Text="Selected Product" FontSize="20" FontWeight="ExtraBold" />
+
+        <TextBox Text="{Binding SelectedProduct.Name}" />
+        <TextBox Text="{Binding SelectedProduct.Price}" />
 
     </StackPanel>
 </Window>

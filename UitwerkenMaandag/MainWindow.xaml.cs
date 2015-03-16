@@ -18,5 +18,10 @@ namespace UitwerkenMaandag
             Closing += (s, e) => ViewModelLocator.Cleanup();
          
         }
+
+        private void DataGrid_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
